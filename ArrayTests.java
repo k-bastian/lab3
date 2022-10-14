@@ -12,15 +12,15 @@ public class ArrayTests {
 
   @Test
   public void testReversed() {
-    int[] input1 = { 10, 20, 25, 30, 40 };
-    assertArrayEquals(new int[]{ 40, 30, 25, 20, 10 }, ArrayExamples.reversed(input1));
+    int[] input1 = { 10, 20, 30, 40, 50 };
+    assertArrayEquals(new int[]{ 50, 40, 30, 20, 10 }, ArrayExamples.reversed(input1));
   }
 
   @Test
   public void ReverseInPlace2() {
-    int[] input1 = {10, 20, 25, 30, 40};
+    int[] input1 = {10, 20, 30, 40, 50};
     ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{40, 30, 25, 20, 10}, input1);
+    assertArrayEquals(new int[]{50, 40, 30, 20, 10}, input1);
   }
 
   @Test
